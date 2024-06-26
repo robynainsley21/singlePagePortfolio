@@ -1,25 +1,32 @@
 <template>
-  <div>
+  <div class="wrapper">
     <NavComp />
     <main class="container-fluid">
-      <HomeViewVue />
       <router-view />
     </main>
+    <FooterComp />
   </div>
 
 </template>
 
 <script>
-import HomeViewVue from './views/HomeView.vue'
-import NavComp from '@/components/Navbar.vue'
-
+import NavComp from '@/components/Navbar.vue' 
+import FooterComp from '@/components/Footer.vue'
 
 export default {
   components: {
-    HomeViewVue,
-    NavComp
-  }
+    NavComp,
+    FooterComp
+  },
+  computed: {
+    jobTitle(){
+      return this.$store.state.jobTitle
+    }
+  },
+
 }
 </script>
 
-<style></style>
+<style>
+
+</style>
