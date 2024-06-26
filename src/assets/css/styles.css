@@ -1,0 +1,52 @@
+/*Bootstrap icon*/
+
+/*App*/
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+    background-color: var(--bg);
+}
+
+nav {
+  padding: 30px;
+}
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+  color: var(--primary);
+}
+
+:root{
+    --primary: #5A639C;
+    --accent: #45474B;
+    --bg: #F5F7F8;
+}
+
+#offcanvasNavbar{
+    background-color: var(--accent);
+   
+    &&.navbar-nav{
+        color: var(--bg);
+    }
+}
+/*Universal selectors*/
+img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*Custom variables*/
+
+/*logo*/
+img[alt="logo"] {
+  width: 5rem;
+}
