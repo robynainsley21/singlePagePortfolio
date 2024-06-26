@@ -30,13 +30,9 @@ nav a.router-link-exact-active {
     --bg: #F5F7F8;
 }
 
-#offcanvasNavbar{
+/* #offcanvasNavbar{
     background-color: var(--accent);
-   
-    &&.navbar-nav{
-        color: var(--bg);
-    }
-}
+} */
 /*Universal selectors*/
 img {
   aspect-ratio: 1;
