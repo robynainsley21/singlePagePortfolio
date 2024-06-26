@@ -44,6 +44,7 @@ nav a.router-link-exact-active {
   grid-template-rows: auto minmax(100dvh, 100%) auto;
 }
 
+/*Universal selectors*/
 img {
   aspect-ratio: 1;
   object-fit: cover;
