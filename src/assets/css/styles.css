@@ -52,6 +52,16 @@ nav a.router-link-exact-active {
   grid-template-rows: auto minmax(100dvh, 100%) auto;
 }
 
+<<<<<<< HEAD
+=======
+/*Universal selectors*/
+img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+>>>>>>> 3d5393f7f831f39bb3fd84973b179b6418500054
 .max-height {
   /* height: 100vh; */
 
