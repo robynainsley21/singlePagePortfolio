@@ -7,13 +7,16 @@
       <h2>About</h2>
       <div class="row">
         <!-- <p class="card-title"><i class="fa-solid fa-location-dot"></i>Cape Town, South Africa, 7100</p> -->
+         <AboutSection />
       </div>
     </section>
     <section class="row max-height" id="resume">
       <h2>Resume</h2>
+      <ResumeSection />
     </section>
     <section class="row max-height" id="skills">
       <h2>Skills</h2>
+      <SkillsSection />
     </section>
     <section class="row max-height" id="testimonials">
       <h2>Testimonials</h2>
@@ -29,10 +32,17 @@
 
 <script>
 import LandingSection from '@/components/LandingSection.vue'
+import AboutSection from '@/components/AboutSection.vue'
+import ResumeSection from '@/components/ResumeSection.vue';
+import SkillsSection from '@/components/SkillsSection.vue'
+
 export default {
   name: 'HomeView',
   components: {
-    LandingSection
+    LandingSection,
+    AboutSection,
+    ResumeSection,
+    SkillsSection
   }
 }
 </script>

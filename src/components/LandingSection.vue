@@ -1,8 +1,6 @@
 <template>
   <div class="row" id="landing-content">
-    <div class="">
       <h1 class="landing-title">Hi, I'm <span>Robyn</span>.</h1>
-    </div>
     <div class="
        image-box border-animation">
       <img class="landing-img" src="https://robynainsley21.github.io/images/images/headshot.JPG" alt="landing-img"

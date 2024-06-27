@@ -2,11 +2,19 @@
 
 /*Universal selectors*/
 /*App*/
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kode+Mono:wght@400..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kode+Mono:wght@400..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: PT Sans, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -44,26 +52,25 @@ nav a.router-link-exact-active {
   grid-template-rows: auto minmax(100dvh, 100%) auto;
 }
 
-img {
-  aspect-ratio: 1;
-  object-fit: cover;
-  object-position: center;
-}
-
 .max-height {
-  height: 100vh;
+  /* height: 100vh; */
 
-  & h2{
+  & h2 {
     margin-top: 4rem;
     text-align: center;
   }
 }
 
-.card{
-    width: 18rem;
+.card {
+  width: 18rem;
+  margin: auto;
 }
 
-/*landing page*/
+.row {
+  margin: 0;
+}
+
+/*landing section*/
 .landing-title {
   font-family: "Kode Mono", sans-serif;
   font-size: 3.4rem;
@@ -110,19 +117,142 @@ img[alt="landing-img"] {
     text-align: center;
 
     & .landing-title {
-        font-size: 4rem;
-        text-align: center;
-        margin-bottom: 2rem;
-      }
+      font-size: 4rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
   }
 
-  .landing-text{
+  .landing-text {
     font-size: 1.2rem;
     margin-top: 1rem;
   }
-  
 }
-/*landing page*/
+/*landing section*/
+
+/*about section*/
+
+/*about section*/
+
+/*resume section*/
+:is(img[alt="edu-img"], img[alt="skill-img"]) {
+  width: 5rem;
+  margin: auto;
+}
+
+.edu-box {
+  display: flex;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  width: 80%;
+  margin: auto;
+
+  &:last-child {
+    align-self: auto;
+  }
+}
+
+.col-item {
+  width: 50%;
+}
+
+.btn {
+  border: 1px solid;
+  width: 30%;
+}
+
+@media (width < 426px) {
+  .edu-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .btn {
+    width: 50%;
+  }
+}
+
+@media (max-width: 769px) and (min-width: 426px) {
+  .edu-box {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+  }
+}
+/*resume section*/
+
+/*skills section*/
+@-webkit-keyframes spin-icon {
+  100% {
+    background-position: -44px 0;
+  }
+}
+
+@keyframes spin-icon {
+  100% {
+    background-position: -44px 0;
+  }
+}
+@-webkit-keyframes float-icon {
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes float-icon {
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@-webkit-keyframes float-icon-shadow {
+  100% {
+    transform: scale(0.85, 0.85) translateY(10px);
+  }
+}
+@keyframes float-icon-shadow {
+  100% {
+    transform: scale(0.85, 0.85) translateY(10px);
+  }
+}
+.icon {
+  width: 5rem;
+  height: 5rem;
+  margin: auto;
+  background: inherit;
+  border-radius: 50%;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation: spin-icon 2s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+      infinite,
+    float-icon 1s ease infinite alternate;
+  animation: spin-icon 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite,
+    float-icon 1s ease infinite alternate;
+}
+.icon::before {
+  content: "";
+  width: 50px;
+  height: 10px;
+  margin-left: -25px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  -webkit-animation: float-icon-shadow 1s ease infinite alternate;
+  animation: float-icon-shadow 1s ease infinite alternate;
+}
+
+.skill-card{
+  background-color: inherit;
+}
 
 /*Custom variables*/
 
