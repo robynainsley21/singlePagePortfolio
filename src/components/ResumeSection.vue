@@ -29,13 +29,12 @@
                 </div>
             </div>
         </div>
-        <div v-else class="d-flex justify-content-center">
-            <div class="spinner-border" role="status"></div>
-        </div>
+        <SpinnerComp v-else/>
     </div>
 </template>
 
 <script setup>
+import SpinnerComp from '@/components/Spinner.vue'
 import { computed, onMounted } from 'vue'
 import { useStore } from 'vuex'
 const store = useStore()

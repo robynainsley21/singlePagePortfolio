@@ -52,16 +52,6 @@ nav a.router-link-exact-active {
   grid-template-rows: auto minmax(100dvh, 100%) auto;
 }
 
-<<<<<<< HEAD
-=======
-/*Universal selectors*/
-img {
-  aspect-ratio: 1;
-  object-fit: cover;
-  object-position: center;
-}
-
->>>>>>> 3d5393f7f831f39bb3fd84973b179b6418500054
 .max-height {
   /* height: 100vh; */
 
@@ -74,6 +64,7 @@ img {
 .card {
   width: 18rem;
   margin: auto;
+  background-color: inherit;
 }
 
 .row {
@@ -145,7 +136,7 @@ img[alt="landing-img"] {
 /*about section*/
 
 /*resume section*/
-:is(img[alt="edu-img"], img[alt="skill-img"]) {
+:is(img[alt="edu-img"], img[alt="skill-img"]){
   width: 5rem;
   margin: auto;
 }
@@ -263,6 +254,43 @@ img[alt="landing-img"] {
 .skill-card{
   background-color: inherit;
 }
+/*skills section*/
+
+/*testimonials section*/
+:is(img[alt="person-img"], img[alt="project-img"]){
+  height: 8rem;
+  margin: auto;
+}
+
+.testimonial-card{
+  height: 30rem;
+  padding: 1rem;
+}
+
+.testimonial-content{
+  height: 100%;
+  overflow: auto;
+  padding: 1rem;
+}
+/*testimonials section*/
+
+/*projects section*/
+.buttons-box{
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-card{
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+
+  &.project-header{
+    align-items: flex-start;
+  }
+}
+/*projects section*/
+
 
 /*Custom variables*/
 

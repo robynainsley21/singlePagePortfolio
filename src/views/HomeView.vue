@@ -4,28 +4,30 @@
       <LandingSection /> 
     </section>
     <section class="row max-height" id="about">
-      <h2>About</h2>
+      <h2 class="p-4">About</h2>
       <div class="row">
-        <!-- <p class="card-title"><i class="fa-solid fa-location-dot"></i>Cape Town, South Africa, 7100</p> -->
          <AboutSection />
       </div>
     </section>
     <section class="row max-height" id="resume">
-      <h2>Resume</h2>
+      <h2 class="p-4">Resume</h2>
       <ResumeSection />
     </section>
     <section class="row max-height" id="skills">
-      <h2>Skills</h2>
+      <h2 class="p-4">Skills</h2>
       <SkillsSection />
     </section>
     <section class="row max-height" id="testimonials">
-      <h2>Testimonials</h2>
+      <h2 class="p-4">Testimonials</h2>
+      <TestimonialSection />
     </section>
     <section class="row max-height" id="projects">
-      <h2>Projects</h2>
+      <h2 class="p-4">Projects</h2>
+      <ProjectsSection />
     </section>
     <section class="row max-height" id="contact">
-      <h2>Contact</h2>
+      <h2 class="p-4">Contact</h2>
+      <ContactSection />
     </section>
   </div>
 </template>
@@ -35,6 +37,9 @@ import LandingSection from '@/components/LandingSection.vue'
 import AboutSection from '@/components/AboutSection.vue'
 import ResumeSection from '@/components/ResumeSection.vue';
 import SkillsSection from '@/components/SkillsSection.vue'
+import TestimonialSection from '@/components/TestimonialSection.vue' 
+import ProjectsSection from '@/components/ProjectsSection.vue'
+import ContactSection from '@/components/ContactSection.vue'
 
 export default {
   name: 'HomeView',
@@ -42,7 +47,10 @@ export default {
     LandingSection,
     AboutSection,
     ResumeSection,
-    SkillsSection
+    SkillsSection,
+    TestimonialSection,
+    ProjectsSection,
+    ContactSection
   }
 }
 </script>
