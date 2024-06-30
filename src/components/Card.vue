@@ -3,7 +3,7 @@
         <div class="card-header">
             <slot name="cardHeader"></slot>
         </div>
-        <div class="card-body">
+        <div class="card-body text-center">
             <slot name="cardBody"></slot>
         </div>
     </div>
