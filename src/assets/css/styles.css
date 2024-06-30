@@ -83,7 +83,7 @@ nav a.router-link-exact-active {
 
 img[alt="landing-img"] {
   width: 15rem;
-  border-radius: 100%;
+  /* border-radius: 100%; */
   margin: auto;
 }
 
@@ -136,7 +136,7 @@ img[alt="landing-img"] {
 /*about section*/
 
 /*resume section*/
-:is(img[alt="edu-img"], img[alt="skill-img"]){
+:is(img[alt="edu-img"], img[alt="skill-img"]) {
   width: 5rem;
   margin: auto;
 }
@@ -251,23 +251,23 @@ img[alt="landing-img"] {
   animation: float-icon-shadow 1s ease infinite alternate;
 }
 
-.skill-card{
+.skill-card {
   background-color: inherit;
 }
 /*skills section*/
 
 /*testimonials section*/
-:is(img[alt="person-img"], img[alt="project-img"]){
+:is(img[alt="person-img"], img[alt="project-img"]) {
   height: 8rem;
   margin: auto;
 }
 
-.testimonial-card{
+.testimonial-card {
   height: 30rem;
   padding: 1rem;
 }
 
-.testimonial-content{
+.testimonial-content {
   height: 100%;
   overflow: auto;
   padding: 1rem;
@@ -275,22 +275,21 @@ img[alt="landing-img"] {
 /*testimonials section*/
 
 /*projects section*/
-.buttons-box{
+.buttons-box {
   display: flex;
   justify-content: space-around;
 }
 
-.project-card{
+.project-card {
   height: 25rem;
   display: flex;
   flex-direction: column;
 
-  &.project-header{
+  &.project-header {
     align-items: flex-start;
   }
 }
 /*projects section*/
-
 
 /*Custom variables*/
 
