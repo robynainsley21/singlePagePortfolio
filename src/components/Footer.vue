@@ -1,7 +1,7 @@
 <template>
-  <footer class="container-fluid text-center">
+  <footer class="text-center fixed-bottom">
     <div class="row">
-      <p class="lead">Robyn's Portfolio &copy; <span>{{ cYear }}</span></p>
+      <p class="lead mt-4">Robyn's Portfolio &copy; <span>{{ cYear }}</span></p>
     </div>
   </footer>
 </template>

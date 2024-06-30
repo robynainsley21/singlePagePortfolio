@@ -12,7 +12,8 @@ export default createStore({
     experiences: null,
     skills: null,
     testimonials: null,
-    projects: null
+    projects: null,
+    contact: null
   },
   getters: {
   },
@@ -37,6 +38,9 @@ export default createStore({
     },
     setProjects(state, value){
       state.projects = value
+    },
+    setContact(state, value){
+      state.contact = value
     }
   },
   actions: {
@@ -131,6 +135,19 @@ export default createStore({
         })
       }
     },
+    async fetchContact(context){
+      try {
+        let { contact } = await (await axios.get(portfolioURL)).data
+        context.commit("setContact", contact)
+      } catch (error) {
+        Swal.fire({
+          title: "Error",
+          text: "Failed to fetch contact details",
+          icon: "error",
+          timer: 2000
+        })
+      }
+    }
   },
   modules: {
   }

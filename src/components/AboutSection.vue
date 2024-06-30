@@ -5,7 +5,8 @@
         </div>
         <div class="col-md-6">
             <p v-if="about && about.length && about[0]?.text">
-                <span>{{ about[0]?.text }}</span>
+                <span>{{ about[0]?.text1 }}</span>
+                <span>{{ about[0]?.text2 }}</span>
             </p>
             <SpinnerComp v-else />
         </div>
