@@ -1,13 +1,13 @@
 <template>
   <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-          <router-link class="navbar-brand" to="/">
+        <div class="container-fluid p-3">
+          <a class="navbar-brand" href="#landing">
             <img
               src="https://robynainsley21.github.io/images/images/Portfolio logo (1).png"
               alt="logo"
               loading="lazy"
             />
-          </router-link>
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -25,13 +25,13 @@
             aria-labelledby="offcanvasNavbarLabel"
           >
             <div class="offcanvas-header">
-              <router-link class="navbar-brand" to="/">
+              <a class="navbar-brand" href="#landing">
                 <img
                   src="https://robynainsley21.github.io/images/images/Portfolio logo (1).png"
                   alt="logo"
                   loading="lazy"
                 />
-              </router-link>
+              </a>
               <button
                 type="button"
                 class="btn-close"
@@ -44,11 +44,11 @@
                 class="navbar-nav fw-bolder ms-auto"
               >
                 <li class="nav-item">
-                  <router-link
+                  <a
                     class="nav-link font-weight-bold"
                     aria-current="page"
-                    to="/"
-                    >Home</router-link
+                    href="#landing"
+                    >Home</a
                   >
                 </li>
                 <li class="nav-item">
